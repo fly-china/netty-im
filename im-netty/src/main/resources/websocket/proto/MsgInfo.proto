@@ -1,0 +1,21 @@
+syntax = "proto3";
+package com.lpf.im.group2.model;
+option java_outer_classname = "MsgInfoProto";
+
+message MsgInfo {
+    string version = 1; //接口版本号
+    CMDEnum cmd = 2; //请求接口命令字  1绑定  2心跳  3上线  4下线 5消息
+    string senderId = 3; //发送人
+    string recvId = 4; //接收人
+    uint32 msgtype = 5; //请求1，应答2，通知3，响应4  format
+    bytes content = 6; //请求数据
+
+    enum CMDEnum {
+        DEFAULT = 0;
+        ONLINE = 1;
+        OFFLINE = 2;
+        MESSAGE = 3;
+        BROADCAST = 4;
+        GET_ALL_ONLINE_USERS = 5;
+    }
+}

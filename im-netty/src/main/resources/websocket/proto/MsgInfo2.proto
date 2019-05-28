@@ -1,0 +1,9 @@
+syntax = "proto3";
+package com.lpf.im.group2.model;
+option java_outer_classname = "MsgInfoProto";
+
+message MsgInfo {
+    string version = 1; //接口版本号
+    string senderId = 2; //发送人
+    string recvId = 3; //接收人
+}
