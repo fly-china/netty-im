@@ -23,7 +23,7 @@
         <netty.version>4.1.31.Final</netty.version>
         <lpf.im.version>1.0</lpf.im.version>
         <msgpack.version>0.6.12</msgpack.version>
-        <fastjson.version>1.2.51</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
 		<protobuf.version>3.6.1</protobuf.version>
     </properties>
     <dependencyManagement>
